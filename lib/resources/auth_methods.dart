@@ -33,6 +33,7 @@ class AuthMethods{
               'profilePhoto' : user.photoURL
             });
           }
+          showSnackBar(context, "Login Successful");
           res = true;
         }
     }on FirebaseAuthException catch(e){
